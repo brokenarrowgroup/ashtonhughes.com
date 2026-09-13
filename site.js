@@ -1,4 +1,4 @@
-/* ashtonhughes.com — shared site behavior. Vanilla JS, no libraries, no trackers. */
+/* ashtonhughes.com — shared site behavior. Vanilla JS, no libraries. The only third-party script is the cookie-free GoatCounter view counter in each page. */
 (function () {
   "use strict";
 
