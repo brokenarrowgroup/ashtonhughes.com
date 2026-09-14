@@ -592,6 +592,75 @@ body.home .nav-toggle { background: rgba(30, 22, 14, 0.5); color: #f6efe2; borde
 }
 a.confirm { text-decoration: underline dotted; }
 
+/* ---------- tribute wall (bethany/tributes) ---------- */
+
+.tribute-form {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: var(--sp-md);
+}
+.tribute-form label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: var(--sp-sm) 0 6px;
+}
+.tribute-form label:first-child { margin-top: 0; }
+.tribute-form .optional { font-weight: 400; color: var(--ink-soft); }
+.tribute-form input,
+.tribute-form textarea {
+  width: 100%;
+  font: inherit;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.tribute-form textarea { resize: vertical; min-height: 140px; }
+.tribute-form input:focus,
+.tribute-form textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.tribute-form .btn { border: 0; cursor: pointer; }
+.tribute-form .btn:disabled { opacity: 0.6; cursor: default; }
+.tf-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.tribute-note { font-size: 0.9rem; color: var(--ink-soft); margin: var(--sp-sm) 0; }
+.tribute-status { margin: var(--sp-sm) 0 0; font-weight: 600; color: var(--accent); }
+.tribute-status:empty { display: none; }
+.tribute-status.error { color: #b04a2f; }
+
+.tribute-wall { display: grid; gap: var(--sp-md); }
+.tribute-card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  box-shadow: var(--shadow);
+  padding: var(--sp-md);
+}
+.tribute-message {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0 0 1em;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+.tribute-meta {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 14px;
+}
+.tribute-name { font-weight: 600; color: var(--ink); }
+.tribute-empty { color: var(--ink-soft); font-style: italic; }
+
 /* ---------- footer ---------- */
 
 .site-footer {

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tribute Wall · Bethany Hughes</title>
+<meta name="description" content="Share a memory of Bethany Hughes (1993–2026), and read what others have shared.">
+<link rel="stylesheet" href="../../styles.css?v=20260914">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <div class="brand">
+      <a class="brand-name" href="../">Bethany Hughes</a>
+      <span class="brand-dates">Born 6.16.1993 – With GOD 9.9.2026</span>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Site">
+      <a href="../">Bethany</a>
+      <a href="./" aria-current="page">Tribute Wall</a>
+      <a href="../../index.html">Ashton</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="measure page-head">
+    <h1>Tribute Wall</h1>
+    <p class="byline">Share a memory, a prayer, or a few words about Bethany.</p>
+  </section>
+
+  <!-- Posts go to the family's Google Form. The family reads each one before it appears below. -->
+  <section class="measure reveal">
+    <form class="tribute-form" id="tribute-form" novalidate>
+      <label for="tf-name">Your name</label>
+      <input id="tf-name" name="name" type="text" autocomplete="name" maxlength="80" required>
+
+      <label for="tf-relation">How you knew Bethany <span class="optional">(optional)</span></label>
+      <input id="tf-relation" name="relation" type="text" maxlength="80" placeholder="Friend, coworker, family…">
+
+      <label for="tf-message">Your tribute</label>
+      <textarea id="tf-message" name="message" rows="6" maxlength="3000" required></textarea>
+
+      <!-- Spam trap: people never see this field; bots fill it in. -->
+      <div class="tf-trap" aria-hidden="true">
+        <label for="tf-website">Website</label>
+        <input id="tf-website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+
+      <p class="tribute-note">The family reads each tribute before it appears on the wall.</p>
+      <button class="btn" type="submit">Share tribute</button>
+      <p class="tribute-status" id="tribute-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <hr class="gold-rule">
+
+  <section class="measure reveal" aria-labelledby="wall-title">
+    <h2 id="wall-title">Tributes</h2>
+    <div class="tribute-wall" id="tribute-wall">
+      <p class="tribute-empty">Loading tributes…</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>This page is kept by the Hughes family in memory of our Bethany. Forever loved. Forever missed.</p>
+</footer>
+
+<script src="../../site.js"></script>
+<script src="tributes.js"></script>
+<!-- Private view counter (GoatCounter, cookie-free). Dashboard is behind David's login. -->
+<script data-goatcounter="https://bethanyhughes.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
