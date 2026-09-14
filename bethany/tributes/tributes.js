@@ -72,7 +72,8 @@
   }
 
   function loadWall() {
-    fetch(CONFIG.wallCsv, { cache: "no-store" })
+    /* the changing "t" tag asks Google for its newest copy; without it some servers answer with a copy up to 5 minutes old */
+    fetch(CONFIG.wallCsv + "&t=" + Date.now(), { cache: "no-store" })
       .then(function (res) {
         if (!res.ok) throw new Error("HTTP " + res.status);
         return res.text();
